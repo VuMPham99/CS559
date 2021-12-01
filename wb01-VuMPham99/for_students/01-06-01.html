@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<div>
+    <input id="slider1" type="range" min="0" max="100" step="1" ><br/>
+    <input id="slider2" type="range" min="0" max="100" step="1" ><br/>
+    <input id="slider3" type="range" min="-100" max="100" step="1" ><br/>
+</div>
+<ul>
+    <li id="li1"></li>
+    <li id="li2"></li>
+    <li id="li3"></li>
+</ul>
+</body>
+
+<script type="module">
+    // Put some code here
+    window.onload = function(){
+        /** @type{HTMLInputElement} */ let slider1 = (/** @type{HTMLInputElement} */ document.getElementById("slider1"));
+        /** @type{HTMLInputElement} */ let slider2 = (/** @type{HTMLInputElement} */ document.getElementById("slider2"));
+        /** @type{HTMLInputElement} */ let slider3 = (/** @type{HTMLInputElement} */ document.getElementById("slider3"));
+        document.getElementById("li1").innerHTML = `Slider 1 - value ${slider1.value}`;
+        document.getElementById("li2").innerHTML = `Slider 2 - value ${slider2.value}`;
+        document.getElementById("li3").innerHTML = `Slider 3 - value ${slider3.value}`;
+        if (slider1 && slider2 && slider3){
+            slider1.onchange = function(){
+                slider3.value = slider2.value - slider1.value;
+                document.getElementById("li1").innerHTML = `Slider 1 - value ${slider1.value}`;
+                document.getElementById("li3").innerHTML = `Slider 3 - value ${slider2.value - slider1.value} `;
+            };
+            slider2.onchange = function(){
+                slider3.value = slider2.value - slider1.value;
+                document.getElementById("li2").innerHTML = `Slider 2 - value ${slider2.value}`;
+                document.getElementById("li3").innerHTML = `Slider 3 - value ${slider2.value - slider1.value} `;
+            };
+            slider3.oninput = function(){
+                slider3.value = slider2.value - slider1.value;
+                
+            };
+        }
+        
+    }
+</script>
+</html>
+

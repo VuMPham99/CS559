@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p>Put 2 buttons and a slider here</p>
+    <div>
+        <input id="slider" type="range" min="0" max="100" step="1" ><br/>
+        <button id="start">start</button>
+        <button id ="stop">stop</button>
+    </div>
+</body>
+
+<script type="module">
+    window.onload = function(){
+
+        let start = document.getElementById("start");
+        if(start){
+            start.onclick = function(){
+                if(stop.clicked == true){
+                    stop.clicked = false;
+                }
+                start.clicked = true;
+            };
+        }
+        let stop = document.getElementById("stop");
+        if(stop){
+            stop.onclick = function(){
+                stop.clicked = true;
+            }
+        }
+    }
+    // Put some code here
+    /** @type{HTMLInputElement} */ let slr = (/** @type{HTMLInputElement} */ document.getElementById("slider"));
+      /** @type{HTMLInputElement} */ let start = (/** @type{HTMLInputElement} */ document.getElementById("start"));
+      /** @type{HTMLInputElement} */ let stop = (/** @type{HTMLInputElement} */ document.getElementById("stop"));
+    function advanceSLR(){
+        let speed;
+        if(start.clicked == true){
+            speed = 1;
+        }
+        if(stop.clicked == true){
+            speed = 0;
+        }
+        let newValue = (Number(slr.value)+(speed)) % 100;
+        if (newValue<0) newValue=100;
+        slr.value = newValue.toString();
+        window.requestAnimationFrame(advanceSLR);
+    }
+    advanceSLR();
+</script>
+</html>
+

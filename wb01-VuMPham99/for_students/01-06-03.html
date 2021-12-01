@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <input type="range" min="0" max="100" id="slider" value="0">
+</body>
+
+<script type="module">
+    // Put some code here
+    /** @type{HTMLInputElement} */ let slr = (/** @type{HTMLInputElement} */ document.getElementById("slider"));
+    let rev = false;
+    function advanceSLR(){
+        let speed = 1;
+        if(rev == true){
+            speed = -1;
+        }
+        let newValue = (Number(slr.value)+(speed)) % 100;
+        if(newValue == 99){
+            rev = true;
+        }
+        else if(newValue == 0){
+            rev = false;
+        }
+        slr.value = newValue.toString();
+        window.requestAnimationFrame(advanceSLR);
+    }
+    advanceSLR();
+</script>
+</html>
+

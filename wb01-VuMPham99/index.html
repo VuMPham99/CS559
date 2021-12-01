@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    
+<!-- CS559 Workbook Pages - page content &copy; 2021, Michael Gleicher -->
+<!-- This page is part of a Workbook developed for the 
+    CS559 Computer Graphics Class at the University of Wisconsin
+    https://graphics.cs.wisc.edu/Courses/559-sp2021/ -->
+    <head>
+	<meta name="generator" content="Hugo 0.80.0" />
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/workbook.css">
+        <script src="./js/resizeIFrames.js"></script>
+    </head>
+    <body>
+        <div class="container container--outer"><div class="maincolumn">
+
+<main class="main list" role="main">
+	<header class="main__header">
+		<h1 class="main__title">Workbook 1: Introduction (Pre-Graphics)</h1>
+	</header>
+	<div class="content main__content clearfix">
+        
+        <p>This workbook is due on Monday, February 1, 2021 </p>
+        
+        
+        <h2>Learning Goals</h2>
+        <ol>
+            <li>Understand and use the class mechanics (GitHub classroom links, Git, local servers, editing pages, &hellip;)</li>
+            <li>Understand the organization of workbooks for the class (looking at pages, boxes, editing and adding things, turning things in)</li>
+            <li>Review basic HTML that you will need for class</li>
+            <li>Practice basic JavaScript and understand how to attach programs to web pages</li>
+            <li>Make interactions and animations with JavaScript web pages</li>
+            <li>Differentiate and use event-driven- and animation-loop-driven- programming</li>
+            <li>Understand how to control timing with browser animation loops</li>
+        </ol>
+        
+        <h2 id="introduction">Introduction</h2>
+<p>Welcome to the first workbook for CS559!</p>
+<p>The right way to use this workbook, and any of the following ones, is to:</p>
+<ol>
+<li>Clone the workbook from GitHub</li>
+<li>Serve the folder using a local server</li>
+<li>Start by looking at the index.html file in the web browser</li>
+<li>Follow the instructions</li>
+<li>While working, you&rsquo;ll change files (generally only ones in the <code>for_students</code> directory)</li>
+<li>As you make changes, you should periodically commit them to GIT so you have a backup. You can push them to GitHub as well.</li>
+<li>When you are done, make sure everything it committed and pushed, then do the Quiz on Canvas <strong>link</strong>.</li>
+</ol>
+<p>The fact that you are looking at this means you probably have done the first three of those steps!</p>
+<p>If you haven&rsquo;t already read the general instructions for workbooks, see the <a href="https://graphics.cs.wisc.edu/Courses/559-sp2021/pages/workbooks/" target="_blank">Workbooks</a> page on the course web site. It explains some of the things that you have to do.</p>
+<p>Note: this workbook is a little wordier and more &ldquo;make sure you know how to do things&rdquo;
+than future ones are likely to be. This workbook is to make sure you are ready to do
+programming. Later ones will be more about doing some programming.</p>
+<p>In the future, we&rsquo;ll be doing graphics programming.
+This workbook is about making sure you are ready!
+Future workbooks will have you do more programming, and less plain reading.</p>
+<h2 id="local-server-check">Local Server Check</h2>
+<p>You should always &ldquo;run&rdquo; the web pages served by a local server. 
+See the <a href="https://graphics.cs.wisc.edu/Courses/559-sp2021/pages/559tools/" target="_blank">Tools for 559</a> page for more information.
+Using a local server requires both running the server <em>and</em> having the web browser look at the server. If you don&rsquo;t use a local server (and instead you just open the file in the web browser), problems can happen.</p>
+<p>We have no way to check if you are using a local server. Some of the web pages will break in weird ways.</p>
+<p>Make sure that you know how to use a local server. That&rsquo;s a goal of this assignment -
+we will need it for future assignments. Re-read the  <a href="https://graphics.cs.wisc.edu/Courses/559-sp2021/pages/559tools/" target="_blank">Tools for 559</a> page, and ask for help, if you need it.</p>
+<h2 id="what-you-should-do-with-this-workbook">What you should do with this workbook</h2>
+<p>If you haven&rsquo;t already done it, please review the pages on the Course Website. The <a href="https://graphics.cs.wisc.edu/Courses/559-sp2021/pages/getting-started/" target="_blank">Getting Started</a> page is a good place to get started. You should do everything there. The fact that you found this workbook and got this far means you&rsquo;ve done at least some reading.</p>
+<p>You are required to edit the <code>README.md</code> file (see the <a href="https://graphics.cs.wisc.edu/Courses/559-sp2021/pages/workbooks/" target="_blank">Workbooks</a> page), so you might as well put your name, GitHub ID, and WiscID into the file now. You could commit those changes and push them back to GitHub just for practice (see the <a href="https://graphics.cs.wisc.edu/Courses/559-sp2021/pages/git559/" target="_blank">Git and GitHub in CS559</a> page if you don&rsquo;t understand commit and push).</p>
+<p>Workbooks consist of a series of pages. There is always an &ldquo;index&rdquo; page (what you are reading). This is where you start. Then there is a series of &ldquo;regular&rdquo; pages for you to read. These will be numbered, and they will be linked together (so each one will lead to the next). You can see the list of pages in the &ldquo;navigation&rdquo; box (which should be in the upper right corner, unless your screen is too small). These pages will be in the <code>docs</code> directory of the workbook. You are welcome to look at the html for these files, but you generally don&rsquo;t have to.</p>
+<p>The workbook pages will contain &ldquo;boxes&rdquo;. These boxes contain examples that you should look at. Some of them you will just need to read (you will read code in order to learn how it works). Often, you will be asked to change the contents of these boxes. The contents of the boxes will be in the <code>for_students</code> directory. You should avoid changing files that are outside of the <code>for_students</code> directory. If you change a file (in the <code>for_students</code> directory) you need to commit these changes and push them back to GitHub for us to see the changes (see the <a href="https://graphics.cs.wisc.edu/Courses/559-sp2021/pages/git559/" target="_blank">Git and GitHub in CS559</a> page if you don&rsquo;t understand commit and push).</p>
+<p>Sometimes, we will ask you to add files to a workbook. When you add a file, put it into the <code>for_students</code> directory (or a subdirectory of it). Don&rsquo;t forget to use <code>git add</code> to add the file to the repository so you can commit and push it to GitHub.</p>
+<p>You should work through the pages and their boxes in order.</p>
+<p>And when you&rsquo;re done, don&rsquo;t forget to commit your work and push it back to the GitHub repo that GitHub classroom made for you!</p>
+<h2 id="readings">Readings</h2>
+<p>The pages of this workbook are required reading! That includes reading the  web pages, but also, reading the source code of the boxes. (the pages will tell you which files you should read)</p>
+<p>Other readings are sprinkled across the pages of this workbook. Some things that you should make sure that you read along the way:</p>
+<ul>
+<li>You should look at the <a href="https://graphics.cs.wisc.edu/Courses/559-sp2021/" target="_blank">Course Web</a> in general, but particularly all the pages discussed on the <a href="https://graphics.cs.wisc.edu/Courses/559-sp2021/pages/getting-started/" target="_blank">Getting Started</a>. I&rsquo;ve already said that multiple times.</li>
+<li>Some resources on HTML and CSS (if you aren&rsquo;t already familiar). You just need to know the basics. The <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank">Mozilla HTML Learning Guide</a> site is a great resource.</li>
+<li>If you don&rsquo;t understand how we are using colors (like why <code>#FF0000</code> is red), have a look at the <a href="http://graphics.cs.wisc.edu/WP/tutorials/color-initial-answers-to-a-practical-question" target="_blank">CS559 Color Tutorial</a>.</li>
+<li>If you are learning JavaScript, look at the resources on the <a href="https://graphics.cs.wisc.edu/Courses/559-sp2021/pages/javascript559/" target="_blank">Javascript in CS559</a> page.</li>
+</ul>
+<p>For this week, there are no regular readings (book chapters). Those will start in the next week or two.</p>
+<h2 id="due-date-and-rubric">Due Date and Rubric</h2>
+<p>This workbook, like all workbooks is due on Monday (February 1, 2021 for the Spring 2021). Usually, workbook deadlines are strict. For this workbook, we understand that people may have problems with the mechanics, and there will be some leniency.</p>
+<p>Please Figure out how to do workbooks now - we have 11 more this semester. It is important that you can keep up with the schedule.</p>
+<p>All workbooks are graded on a 100 point scale. (90=A, 85=AB, etc).</p>
+<p>Note that this workbook does not have many bonus points. It&rsquo;s very basic, so it doesn&rsquo;t make sense to award students an A for excellent work on something so simple. You&rsquo;ll have plenty of opportunities to earn bonus points so you can get an A throughout the semester.</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>OK, enough talking about how to do the assignment, let&rsquo;s get started on <a href="./docs/1/">Page &nbsp;1&nbsp; (HTML and CS559)</a></p>
+
+        
+        <h2>Rubric</h2>
+        <details>
+            <summary>Detailed Rubric</summary>
+            <h4>Regular Points:</h4>
+            
+            <ul>
+                <li class="rubric_item">(Box: none) (40 pts) correctly turning something in (committing changes and pushing it back to GitHub) </li>
+                <li class="rubric_item">(Box: none) (10 pts) did handin quiz </li>
+                <li class="rubric_item">(Box: 01-01-01) (2 pts) change web page text </li>
+                <li class="rubric_item">(Box: 01-03-02) (2 pts) change text on button press </li>
+                <li class="rubric_item">(Box: 01-04-07) (2 pts) add a javascript file that says something </li>
+                <li class="rubric_item">(Box: 01-06-01) (2 pts) making 3 sliders </li>
+                <li class="rubric_item">(Box: 01-06-01) (3 pts) making slider3 be slider2-slider1 (and update when either slider2 or slider1 is moved) </li>
+                <li class="rubric_item">(Box: 01-06-01) (3 pts) adjusting slider1 and slider2 when slider3 moves </li>
+                <li class="rubric_item">(Box: 01-06-02) (2 pts) making the 3 input elements </li>
+                <li class="rubric_item">(Box: 01-06-02) (2 pts) making the slider move (continuously) when start is pressed </li>
+                <li class="rubric_item">(Box: 01-06-02) (2 pts) making the slider stop when the stop button is pressed </li>
+                <li class="rubric_item">(Box: 01-06-02) (2 pts) making the slider starting again when the start button is pressed (after being stopped) </li>
+                <li class="rubric_item">(Box: 01-06-03) (2 pts) slider goes forward </li>
+                <li class="rubric_item">(Box: 01-06-03) (2 pts) slider goes backward </li>
+                <li class="rubric_item">(Box: 01-06-03) (3 pts) slider goes back and forth </li>
+                <li class="rubric_item">(Box: 01-06-04) (3 pts) fade between colors </li>
+                <li class="rubric_item">(Box: 01-06-04) (3 pts) colors transition in both directions (red-&gt;white, white-&gt;red - or others) </li>
+            </ul>
+            <p>Regular Points: 85</p>
+        
+            <h4>Bonus Points:</h4>
+            <ul>
+            
+                <li class="rubric_item">(Box: 01-06-04) (3 pts) transition between multiple colors </li>
+            </ul>
+            <p>Bonus Points Possible: 3. 
+                
+            </p>
+        
+        </details>
+        
+        <h3 class="get__started">Get started on 
+            <a href="./docs/1/">Page &nbsp;1&nbsp; (HTML and CS559)</a>!</h3>
+        
+	</div>
+</main>
+
+                </div>
+                <div class="sidebar">
+<h2 class="Side_Title">Workbook 1: Introduction (Pre-Graphics)</h2>
+<p class="Side__Note">Pages:</p>
+<ul class="Side__List">
+    <li class="Side__Item Side__Selected">Index (Introduction) </li>
+        <li class="Side__Item Side__Unselected"> <a href="./docs/1/">1: HTML and CS559 </a></li>
+        <li class="Side__Item Side__Unselected"> <a href="./docs/2/">2: HTML Basics </a></li>
+        <li class="Side__Item Side__Unselected"> <a href="./docs/3/">3: HTML and JavaScript </a></li>
+        <li class="Side__Item Side__Unselected"> <a href="./docs/4/">4: Doing things to HTML </a></li>
+        <li class="Side__Item Side__Unselected"> <a href="./docs/5/">5: Animation Loops </a></li>
+        <li class="Side__Item Side__Unselected"> <a href="./docs/6/">6: Try it Yourself </a></li>
+</ul>
+</div>
+</div>
+    </body>
+</html>
