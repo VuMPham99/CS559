@@ -1,0 +1,4 @@
+- In Addition to the pictures, i have created a box on page 12-02 that displays my project.
+- 12-02-01 and 12-grtown are the same. 12-02-01 is my sandbox for testing and display. 
+- 12-grtown is still the main file as required.
+- The moving knight behavior might be weird the first time loading in, but it should be normal after the second or third reloading the page. 

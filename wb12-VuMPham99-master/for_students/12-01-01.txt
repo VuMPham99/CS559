@@ -1,0 +1,7 @@
+1. Please give attribution for your environment map image INCLUDING any conversion process you did.
+- First i found an equirectangular image online. Then i used the converter page that was provided to change the image to cubemap. After that i cropped the image into 6 smaller one for the cube.
+- Then i mapped the texture to the environment map in the skybox's material
+
+2. Please explain what you were trying to make with your bump/normal map, and whether it is a bump or normal map.
+- i used the islands image provided in workbook 9 as texture to the bumpmap. 
+- the sphere with the bumpmap is almost identical to its counterpart in wb9, but it is reflective and have bumpmapping traits.

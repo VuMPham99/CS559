@@ -1,0 +1,7 @@
+List all attributions here, this include "self-attributions":
+- knight model from https://clara.io/view/f7f4af92-89b7-4b26-9e07-af2fea5c1165
+- eye of Sauron texture from https://wallpaperaccess.com/eye-of-sauron
+- fire texture (for the fire wall) from https://unsplash.com/photos/MYjFOiVWWT8
+- studio texture from https://hdrihaven.com/hdri/?c=indoor&h=studio_small_06
+- Death star texture from https://www.google.com/search?q=death+star+texture&rlz=1C1CHBF_enVN854VN854&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiwxaWwx_7vAhWNQs0KHcuRAs0Q_AUoAXoECAEQAw&biw=1396&bih=657#imgrc=ns8Jz-28iMzzcM
+- house texture from http://3danimationmoviemaker.com/scenery-props-some-houses/

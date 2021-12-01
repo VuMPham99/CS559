@@ -1,0 +1,3 @@
+Advanced Thing: 
+- I tried creating 12 soldiers and made them all marching back and forth but the code doesn't work well so i made them all standstill with the exception of 1. If i use the andimation loop function rather than stepworld then they all move accordingly to their feature, but won't stop when the stop button is hit (as expected). Also i tried to make them march across the map and to each houses, but failed. 
+- By marching across the map and to houses, i expanded the ground plane and the firewall. The knights will not hit the firewall and just patrol it in a square-like boundary then go to the houses after each round. Making the knights bounced of the firewall and the house in addition to the patrol rounds were to hard to implement, so i stopped.

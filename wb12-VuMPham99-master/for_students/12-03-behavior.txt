@@ -1,0 +1,10 @@
+Three different behaviors that you made:
+1. knights walking back and forth
+2. Fire wall rotating in place
+3. Tie Fighter flying around the Death star with a different pattern
+
+One behavior that is not simple:
+Not simple: Tornado moving around arbitrary with constricted boundary (or the TIE Fighter)
+
+Animated Articulated Figure: golem*
+Articulated: joints and body

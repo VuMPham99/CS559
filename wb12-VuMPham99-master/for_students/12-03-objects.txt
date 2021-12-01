@@ -1,0 +1,23 @@
+Two kinds of objects created for this assignment:
+1. tf* (the TIE Fighter)
+2. tower* (tower of Sauron)
+
+Five other kinds of objects that you created:
+3. golem*
+4. sb* (the skybox)
+5. xw* (The xwing)
+6. tornado* 
+7. fw* (the fire wall)
+
+At least on of each type of object:
+Building/structure: house-3* (derived from the house template from example but was heavily modified)
+Vehicle: tf* (The TIE Fighter flying around the Death Star)
+Natural Element: fw* (the fire wall surrounds the tower of sauron )
+
+Object loaded from a model file:
+Model: Knights-0* (loaded from https://clara.io/view/f7f4af92-89b7-4b26-9e07-af2fea5c1165)
+- with added features.
+
+An object with a shader that you wrote:
+ShaderObj: the Death Star
+- i reused the code from wb11 that i wrote with slight modification.

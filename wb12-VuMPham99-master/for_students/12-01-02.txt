@@ -1,0 +1,16 @@
+1. What is the difference between a bump map and a normal map?
+
+- They are similar except that normal has more information due its usage of the x,y,z axis while it's more 1 dimensional.
+
+2. What is the difference between a "correct skybox" and simply putting a big cube around the world?
+
+- Correct skybox would move with the camera to keep a constant distance while simply putting a big cube around the world doesnt (it stays still).
+
+3. Why is a sphere a good object for environment mapping, but a flat square is less good?
+
+- Because flat square still has edges, which make them more disruptive. With the sphere, all points have the same distance, while with a square the corners are further away than the centers, which could cause issues.
+
+4. What are the main choices for how to represent environment map images? Why might you pick one or the other?
+
+- The most common ones are cubic environment map, Cylindrical Environment Maps, and spherical environment map. Using cube is easy as it only needs 6 pictures, but sphere is easy because taking pictures to use for it (sphere) is easier than cube's.
+
